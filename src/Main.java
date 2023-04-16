@@ -10,8 +10,10 @@ public class Main {
             box[1] = 2;
             box[2] = 3;
             System.out.println(box[1]);
+
             double [] values = {1.57, 7.654, 9.986};
             System.out.println(values[1]);
+
             int [] balls = {9, 4, 7, 1};
             System.out.println(balls[1]);
 
@@ -64,11 +66,12 @@ public class Main {
             System.out.println();
 
             System.out.println("Задача 4");
-
-            
-
-
-
+            for (int i = 0; i < box.length; i++) {
+                if (box[i] % 2 != 0) {
+                    box[i] += 1;
+                }
+            }
+            System.out.println(Arrays.toString(box));
         }
     }
 }
